@@ -1,21 +1,18 @@
 "use client";
-import React from "react";
-import styles from "../styles/page.module.css";
-import { getCampaignForm } from "../../lib/api";
-import { useQuery } from "@tanstack/react-query";
+import { Inputs, customField } from "@/@types";
 import {
   FormLabel,
   Input,
-  InputGroup,
-  InputLeftElement,
-  Stack,
+  InputGroup
 } from "@chakra-ui/react";
-import { FieldType, Inputs, customField, socialType } from "@/@types";
-import { useForm, SubmitHandler } from "react-hook-form";
-import MyButton from "./UI/button";
+import { useQuery } from "@tanstack/react-query";
 import Image from "next/image";
+import { SubmitHandler, useForm } from "react-hook-form";
+import { getCampaignForm } from "../../lib/api";
 import { instagram, tiktok, twitter } from "../assets/images";
+import styles from "../styles/page.module.css";
 import Loading from "./UI/Loading";
+import MyButton from "./UI/button";
 
 const ApplyNow = () => {
   const {
@@ -108,8 +105,6 @@ const ApplyNow = () => {
           <div className={styles.submitBtn}>
             <MyButton type="submit" color="purple" text="submit" />
           </div>
-
-          {/* <input type='submit' /> */}
         </form>
       )}
     </div>
