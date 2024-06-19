@@ -2,9 +2,9 @@ import HomePageWrapper from "@/wrapper/HomePageWrapper";
 import React from "react";
 import styles from "../styles/page.module.css";
 import ApplyNow from "./ApplyNow";
-type Props = {};
 
-const HomePage = (props: Props) => {
+
+const HomePage = () => {
   return (
     <HomePageWrapper>
       <div className={styles.heading}>
@@ -14,9 +14,9 @@ const HomePage = (props: Props) => {
       </div>
       <div className={styles.description}>
         <p>
-          Whether you're the person with the most likes or followers on campus,
-          or a hard-worker looking to build your network and gain marketing
-          experience, we want to HEAR from you.
+          Whether you&apos;re the person with the most likes or followers on
+          campus, or a hard-worker looking to build your network and gain
+          marketing experience, we want to HEAR from you.
         </p>
         <p>
           Becoming a part of the Breakaway Influencer and Ambassador team is
