@@ -14,7 +14,7 @@ export type buttonType = {
 };
 
 export type customField = {
-  name: string;
+  name: any;
   is_required: boolean;
   question: string;
   type: string;
